@@ -1,0 +1,77 @@
+/* =====================
+   BASE (Mobile First)
+   Varsayılan stiller style.css içindedir
+===================== */
+
+
+/* =====================
+   TABLET ve ÜSTÜ (>= 576px)
+===================== */
+@media (min-width: 576px) {
+    /* Şu an için özel ayar yok */
+}
+
+
+/* =====================
+   LAPTOP ve ÜSTÜ (>= 768px)
+===================== */
+@media (min-width: 768px) {
+    /* Şu an için özel ayar yok */
+}
+
+
+/* =====================
+   DESKTOP (>= 1024px)
+===================== */
+@media (min-width: 1024px) {
+    /* Şu an için özel ayar yok */
+}
+
+
+/* =====================
+   MOBILE & TABLET FIXES
+===================== */
+@media (max-width: 768px) {
+
+    /* NAVBAR (ileride hamburger eklenince kullanılacak) */
+    .nav-links {
+        gap: 20px;
+    }
+
+    /* CONTACT SECTION */
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* HERO TEXT */
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 10%;
+        background-color: var(--secondary-color);
+        flex-direction: column;
+        width: 200px;
+        padding: 20px;
+        border-radius: 15px;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
